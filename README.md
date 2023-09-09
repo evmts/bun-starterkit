@@ -68,13 +68,14 @@ Special steps are needed to get the LSP features working in VSCode. Most editors
 To use this plugin with Visual Studio Code, you should set your workspace's version of TypeScript, which will load plugins from your tsconfig.json file.
 
 1. Open a typescript file in your project in vscode
-2. Open command pallet <cmd>+p or <ctrl>+p 
-3. Select `>Typescript: Select TypeScript Version` in command pallet
-4. Select `Use workspace version`
+2. Open command pallet <cmd>+p or <ctrl>+p
+4. Select `>Typescript: Select TypeScript Version` in command pallet
+5. Select `Use workspace version`
 
+![image](https://github.com/evmts/bun-starterkit/assets/35039927/8d358843-8eed-415d-bc3c-04522a463d15)
+![image](https://github.com/evmts/bun-starterkit/assets/35039927/0111bd24-689f-4f57-a495-ed7dc17f63ae)
 
-In short do this
-
+You now should get all the EVMts LSP features such as natspec comments on hover and go-to-solidity-definition support
 
 For more details see: [Using the workspace version of TypeScript](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-the-workspace-version-of-typescript).
 
