@@ -63,11 +63,20 @@ Below is an example of go-to-definition support
 
 ## VSCode instructions
 
+Special steps are needed to get the LSP features working in VSCode. Most editors should work out the box but please open an issue if you run into trouble.
+
 To use this plugin with Visual Studio Code, you should set your workspace's version of TypeScript, which will load plugins from your tsconfig.json file.
 
-For instructions, see: [Using the workspace version of TypeScript](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-the-workspace-version-of-typescript).
+1. Open a typescript file in your project in vscode
+2. Open command pallet <cmd>+p or <ctrl>+p 
+3. Select `>Typescript: Select TypeScript Version` in command pallet
+4. Select `Use workspace version`
 
-Most other editors should work out the box but please open an issue if you run into trouble
+
+In short do this
+
+
+For more details see: [Using the workspace version of TypeScript](https://code.visualstudio.com/docs/typescript/typescript-compiling#_using-the-workspace-version-of-typescript).
 
 ## ⭐ Github
 
