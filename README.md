@@ -61,6 +61,12 @@ Below is an example of go-to-definition support
 
 ![Untitled\_ Sep 3, 2023 6_52 AM](https://github.com/evmts/evmts-monorepo/assets/35039927/ac46caf3-32cc-4ec5-8b3b-5e1df3f7819a)
 
+## Ethers.js
+
+An ethers.js version of this template is available on the [ethers branch](https://github.com/evmts/bun-starterkit/tree/ethers)
+
+![image](https://github.com/evmts/bun-starterkit/assets/35039927/36d28504-0523-4d23-ad40-04fa8915f325)
+
 ## VSCode instructions
 
 Special steps are needed to get the LSP features working in VSCode. Most editors should work out the box but please open an issue if you run into trouble.
