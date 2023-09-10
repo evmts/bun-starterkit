@@ -41,6 +41,11 @@ contract ExampleContract is ERC721 {
         }
     }
 
+    function hello() external pure returns (string memory) {
+        return "hello";
+    }
+
+
     /// @notice Returns the token URI for a given token by ID
     /// @param tokenId Token ID to query.
     /// @return uri_ Token URI for the given token by ID.

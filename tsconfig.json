@@ -32,6 +32,6 @@
     "incremental": true,
     "types": ["bun-types"]
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.sol"],
   "exclude": ["node_modules"]
 }
