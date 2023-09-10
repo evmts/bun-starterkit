@@ -1,4 +1,3 @@
-import { ExampleContract } from './ExampleContract.sol'
 import { JsonRpcProvider } from 'ethers'
 import { createEthersContract } from '@evmts/ethers'
 
@@ -9,13 +8,13 @@ const rpcUrl = process.env.BUN_RPC_URL ?? 'https://goerli.optimism.io'
 
 const publicProvider = new JsonRpcProvider(rpcUrl)
 
-const ethersContract = createEthersContract(ExampleContract, {
-	runner: publicProvider,
-	address: ExampleContract.addresses[chainId]
-})
 
-ExampleContract.read({ chainId }).hello()
-export const readContract = (owner: `0x${string}` = defaultOwner) => {
+export const readContract = async (owner: `0x${string}` = defaultOwner) => {
+	const { ExampleContract } = await import('./ExampleContract.sol')
+	const ethersContract = createEthersContract(ExampleContract, {
+		runner: publicProvider,
+		address: ExampleContract.addresses[chainId]
+	})
 	return ethersContract.balanceOf(owner)
 }
 
